@@ -1,0 +1,86 @@
+/* Estilos generales */
+
+body {
+    background-color: #f2f2f2; /* Cambia el color de fondo del cuerpo */
+    font-family: Arial, sans-serif; /* Cambia la fuente del texto */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+}
+
+/* Estilos para los formularios */
+
+form {
+    margin: 20px auto; /* Centra los formularios horizontalmente */
+    max-width: 600px; /* Limita el ancho del formulario */
+}
+
+/* Estilos para los botones */
+
+button {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 10px 20px; /* Añade relleno alrededor del texto */
+    border: none; /* Elimina el borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre él */
+    border-radius: 5px; /* Añade esquinas redondeadas */
+    transition: background-color 0.3s; /* Agrega una transición suave */
+}
+
+button:hover {
+    background-color: #45a049; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Estilos para los campos de entrada */
+
+input[type=text], select {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 12px 20px; /* Añade relleno alrededor del texto */
+    margin: 8px 0; /* Añade espacio entre los campos */
+    display: inline-block; /* Permite el ajuste del ancho */
+    border: 1px solid #ccc; /* Añade un borde delgado */
+    border-radius: 4px; /* Añade esquinas redondeadas */
+    box-sizing: border-box; /* Incluye el borde y el relleno en el ancho total */
+}
+
+input[type=checkbox] {
+    margin-right: 5px; /* Añade espacio entre los cuadros de selección */
+}
+
+/* Estilos para las tablas */
+
+table {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    border-collapse: collapse; /* Fusiona los bordes de las celdas */
+    margin-bottom: 20px; /* Añade espacio debajo de las tablas */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Añade un borde delgado a las celdas */
+    padding: 8px; /* Añade relleno dentro de las celdas */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+th {
+    background-color: #4CAF50; /* Color de fondo verde oscuro para las cabeceras */
+    color: white; /* Color del texto blanco */
+}
+
+/* Estilos para los contenedores */
+
+.container {
+    padding: 20px; /* Añade relleno dentro del contenedor */
+    background-color: #f2f2f2; /* Color de fondo gris claro */
+    border-radius: 5px; /* Añade esquinas redondeadas */
+}
+
+/* Estilos específicos para la tabla de clientes */
+
+#tablaCliente {
+    display: block; /* Oculta la tabla al principio */
+}
+
+/* Estilos específicos para la tabla de proveedores */
+
+#tablaProveedor {
+    display: block; /* Oculta la tabla al principio */
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>FORMULARIO</title>
+        <link  href="estilos2.css" rel="stylesheet" type="text/css" >
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <center><h1>SELECCIONE EL TIPO DE FORMULARIO QUE QUIERRE ENVIAR</center>
+<center><button onclick="mostrarTabla('cliente');">CLIENTE</button></center>
+<center><button onclick="mostrarTabla('proveedor');">PROVEEDOR</button></center>
+<center>
+<form action="DirectorioServlet1" name="fromt1" method="get">   
+    <table id="tablaCliente" >
+        <input type="hidden" id="tipo" name="tipo" value="cliente">
+        <tr>
+            <td colspan="3">
+                <center>
+                    <h1> Formulario </h1>
+                </center>
+            </td>
+        </tr>
+        <tr id="subtitulo01_tabla" name="subtitulo01_tabla">
+            <td>Nombre</td>
+            <td colspan="2"><input id="nombre" name="nombre" type="text"></td>
+        </tr>
+        <tr>
+            <td >Correo</td>
+            <td colspan="2"><input id="correo" name="correo" type="text"></td>
+        </tr>
+        <tr>
+            <td>Cedula</td>
+            <td colspan="2"><input id="cedula" name="cedula" type="text"></td>
+        </tr>
+        <tr>
+         <td>Producto</td>
+            <td colspan="2" class="checkbox-container">
+                <input type="checkbox" name="granos" value="gusta"> Granos
+            </td>
+            <td colspan="2" class="checkbox-container">
+                <input type="checkbox" name="aseo" value="gusta"> Aseo
+            </td>
+            <td colspan="2" class="checkbox-container">
+                <input type="checkbox" name="tecnologia" value="gusta"> Tecnologia
+            </td>
+	    <td colspan="2" class="checkbox-container">
+                <input type="checkbox" name="ropa" value="gusta"> Ropa
+            </td>
+	</tr>
+        <tr>
+           <td>Celular</td>
+            <td colspan="2"><input id="celular" name="celular" type="text"></td>        
+	</tr>
+        <tr>
+        <td>Pago</td>
+	<td>	
+        <select name="pagomet">
+            <option value="" selected disabled>Seleccionar opción</option>
+            <option value="Debito">Debito</option>
+            <option value="Credito">Credito</option>
+        </select>
+        </td>
+	<td><input id="numero" name="numero" type="text"></td>
+        </tr>
+	
+        <td colspan="3">
+	<button id="btn_aceptar" name="btn_aceptar" type="submit"><h1>Aceptar</h1></button>
+        </td>
+	</form>
+    </table>
+
+
+<form action="DirectorioServlet1" id="fromt2" enctype="multipart/form-data" method="get">   
+    <table id="tablaProveedor" >
+        <input type="hidden" id="tipo" name="tipo" value="proveedor">
+        <tr>
+            <td colspan="3">
+                <center>
+                    <h1> Formulario </h1>
+                </center>
+            </td>
+        </tr>
+        <tr id="subtitulo01_tabla" name="subtitulo01_tabla">
+            <td>Nombre</td>
+            <td colspan="2"><input id="nombre2" name="nombre2" type="text"></td>
+        </tr>
+        <tr>
+            <td >Correo</td>
+            <td colspan="2"><input id="correo2" name="correo2" type="text"></td>
+        </tr>
+        <tr>
+            <td>Nombre proveedor</td>
+            <td colspan="2"><input id="nombrepro" name="nombrepro" type="text"></td>
+        </tr>
+        <tr>
+         <td>Producto que vende</td>
+            <td colspan="2" class="checkbox-container">
+                <input type="checkbox" name="granos" value="gusta"> Granos
+            </td>
+            <td colspan="2" class="checkbox-container">
+                <input type="checkbox" name="aseo" value="gusta"> Aseo
+            </td>
+            <td colspan="2" class="checkbox-container">
+                <input type="checkbox" name="tecnologia" value="gusta"> Tecnologia
+            </td>
+	    <td colspan="2" class="checkbox-container">
+                <input type="checkbox" name="ropa" value="gusta"> Ropa
+            </td>
+	</tr>
+        <tr>
+           <td>Celular</td>
+            <td colspan="2"><input id="celular2" name="celular2" type="text"></td>        
+	</tr>
+    <tr>
+        <td>
+            Método de cobro
+        </td>
+        <td>
+            <select name="cobromet">
+                <option value="" selected disabled>Seleccionar opción</option>
+                <option value="Debito">Débito</option>
+                <option value="Credito">Crédito</option>
+                <option value="Efectivo">Efectivo</option>
+            </select>
+        </td>
+        <td>
+            <input type="text" id="cobro" name="cobro">
+        </td>
+    </tr>
+    <tr>
+        <td>Direccion</td>
+        <td colspan="2"><input type="text" name="direccion"></td>
+    </tr>
+    <tr>
+        <td colspan="3">
+	<button id="btn_aceptar" name="btn_aceptar" type="submit"><h1>Aceptar</h1></button>
+        </td>
+
+    </tr>
+	</form>
+    </table>
+</center>
+    </body>
+</html>
