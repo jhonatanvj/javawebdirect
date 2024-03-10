@@ -13,6 +13,12 @@ public class Proveedor extends Persona{
     private String nombreProveedor;
     private String direccion;
 
+    public Proveedor(String nombre, String correo, String celular, String pagomet, String numero, String producto, String pnombreProveedor , String pdireccion) {
+        super(nombre, correo, celular, pagomet, numero, producto);
+        nombreProveedor = pnombreProveedor;
+        direccion = pdireccion;
+    }
+
     public String getNombreProveedor() {
         return nombreProveedor;
     }
@@ -29,14 +35,7 @@ public class Proveedor extends Persona{
         this.direccion = direccion;
     }
 
-   public Proveedor(String nombre, String correo, int celular, String pagomet, int numero, String producto, String pnombreProveedor, String pdireccion) {
-    super(nombre, correo, celular, pagomet, numero, producto);
-    nombreProveedor = pnombreProveedor;
-    direccion = pdireccion;
-}
 
-  
-    
     
    
     

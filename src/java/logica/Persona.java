@@ -11,12 +11,12 @@ package logica;
 public class Persona {
     private String nombre;
     private String correo;
-    private int celular;
+    private String celular;
     private String pagomet;
-    private int numero;
+    private String numero;
     private String producto;
 
-    public Persona(String nombre, String correo, int celular, String pagomet, int numero, String producto) {
+    public Persona(String nombre, String correo, String celular, String pagomet, String numero, String producto) {
         this.nombre = nombre;
         this.correo = correo;
         this.celular = celular;
@@ -24,17 +24,6 @@ public class Persona {
         this.numero = numero;
         this.producto = producto;
     }
-    
- 
-
-    public String getProducto() {
-        return producto;
-    }
-
-    public void setProducto(String producto) {
-        this.producto = producto;
-    }
-    
 
     public String getNombre() {
         return nombre;
@@ -52,11 +41,11 @@ public class Persona {
         this.correo = correo;
     }
 
-    public int getCelular() {
+    public String getCelular() {
         return celular;
     }
 
-    public void setCelular(int celular) {
+    public void setCelular(String celular) {
         this.celular = celular;
     }
 
@@ -68,13 +57,23 @@ public class Persona {
         this.pagomet = pagomet;
     }
 
-    public int getNumero() {
+    public String getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
+
+    public String getProducto() {
+        return producto;
+    }
+
+    public void setProducto(String producto) {
+        this.producto = producto;
+    }
+
+   
     
     
     

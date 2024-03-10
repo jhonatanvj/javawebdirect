@@ -76,11 +76,11 @@ th {
 /* Estilos específicos para la tabla de clientes */
 
 #tablaCliente {
-    display: block; /* Oculta la tabla al principio */
+    display: none; /* Oculta la tabla al principio */
 }
 
 /* Estilos específicos para la tabla de proveedores */
 
 #tablaProveedor {
-    display: block; /* Oculta la tabla al principio */
+    display: none; /* Oculta la tabla al principio */
 }

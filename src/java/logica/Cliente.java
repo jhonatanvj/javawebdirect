@@ -10,21 +10,22 @@ package logica;
  */
 public class Cliente extends Persona{
     
-    private int cedula;
+    private String cedula;
 
-    public Cliente(String nombre, String correo, int celular, String pagomet, int numero, String producto,int pcedula) {
+    public String getCedula() {
+        return cedula;
+    }
+
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
+    }
+
+    public Cliente(String nombre, String correo, String celular, String pagomet, String numero, String producto, String pcedula) {
         super(nombre, correo, celular, pagomet, numero, producto);
         cedula = pcedula;
     }
 
-    public int getCedula() {
-        return cedula;
-    }
-
-    public void setCedula(int cedula) {
-        this.cedula = cedula;
-    }
-    
+   
     
 
 }
